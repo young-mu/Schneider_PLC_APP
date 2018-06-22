@@ -1,0 +1,7 @@
+{
+    "name": "schneider-ruff-plc",
+    "version": "0.1.0",
+    "description": "Schneider PLC powered by Ruff",
+    "author": "Nanchao Inc.",
+    "main": "src/index.js"
+}

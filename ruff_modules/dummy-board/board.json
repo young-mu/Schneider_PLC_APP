@@ -1,0 +1,7 @@
+{
+    "version": "2.0",
+    "featureVersion": "0.1",
+    "id": "dummy-board",
+    "model": "dummy-board",
+    "devices": []
+}

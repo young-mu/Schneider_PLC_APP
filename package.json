@@ -1,0 +1,24 @@
+{
+    "name": "schneider_plc_app",
+    "version": "0.1.0",
+    "description": "",
+    "author": "",
+    "main": "src/index.js",
+    "ruff": {
+        "dependencies": {
+            "asap": "^2.0.6",
+            "async": "^1.5.2",
+            "bindings": "^1.2.1",
+            "debug": "^2.6.9",
+            "epoll": "^0.1.22",
+            "gpio": "^0.2.7",
+            "ms": "^2.0.0",
+            "nan": "^2.6.2",
+            "promise": "^7.1.1",
+            "rpi-gpio": "^0.9.1",
+            "schneider-ruff-plc": "^0.1.0",
+            "schneider-data-upload": "^0.1.0"
+        },
+        "version": 1
+    }
+}

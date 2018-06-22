@@ -1,0 +1,12 @@
+{
+    "name": "schneider-data-upload",
+    "version": "0.1.0",
+    "description": "Schneider Data Upload Module",
+    "author": "Nanchao Inc.",
+    "main": "src/index.js",
+    "ruff": {
+        "dependencies": {
+            "mini-mqtt-client": "^0.1.0"
+        }
+    }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "dummy-board",
+  "version": "0.1.1",
+  "description": "Ruff dummy Board Metadata",
+  "author": "Nanchao Inc.",
+  "ruff": {
+    "session-format": {
+      "address": {
+        "type": "string",
+        "description": "designate IP address",
+        "required": true,
+        "visible": true
+      },
+      "token": {
+        "type": "string",
+        "description": "designate token",
+        "required": false,
+        "visible": false
+      }
+    },
+    "dependencies": {
+    }
+  },
+  "engines": {
+    "ruff": ">=1.4.0 <2.0.0"
+  }
+}
