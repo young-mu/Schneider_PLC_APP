@@ -88,7 +88,7 @@ If the external value becomes 0V from 24V, the event will be triggered.
 
 #### Example
 
-```json
+```js
 var PLC = require('schneider-ruff-plc');
 
 PLC.init(function () {
@@ -142,7 +142,7 @@ Upload values to Baidu IoT server right now.
 
 The parameter `values` is object type, in which keys can be `Ix` (x can be 0, 1, ... 9) and `Qx` (x can be 0, 1, 2, 3). Typically. when you call `PLC.readAllValues`, the return values is just like below, you can just pass it into this API.
 
-```json
+```js
 {
     "I0": true, // I0 - I9 (10 inputs)
     "I1": false,
@@ -156,7 +156,7 @@ The parameter `values` is object type, in which keys can be `Ix` (x can be 0, 1,
 
 #### Example
 
-```json
+```js
 var PLC = require('schneider-ruff-plc');
 
 var _DU = require('schneider-data-upload');
