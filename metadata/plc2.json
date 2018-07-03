@@ -1,78 +1,78 @@
 {
     "metadata": {
         "cId": 15,
-        "gId": 88,
-        "gSN": "110011FF-0000-0001-00FF-7C3866DF81B7",
+        "gId": 93,
+        "gSN": "110011FF-0000-0001-00FF-7C3866517485",
         "data": [{
-            "dId": 43636,
-            "dName": "PLC1",
+            "dId": 43643,
+            "dName": "PLC2",
             "iData": [{
-                "iId": 1960,
+                "iId": 2009,
                 "iCode": "Q0",
                 "iName": "输出0",
                 "iUnit": ""
             }, {
-                "iId": 1961,
+                "iId": 2008,
                 "iCode": "Q1",
                 "iName": "输出1",
                 "iUnit": ""
             }, {
-                "iId": 1962,
+                "iId": 2007,
                 "iCode": "Q2",
                 "iName": "输出2",
                 "iUnit": ""
             }, {
-                "iId": 1963,
+                "iId": 2006,
                 "iCode": "Q3",
                 "iName": "输出3",
                 "iUnit": ""
             }, {
-                "iId": 1964,
+                "iId": 2005,
                 "iCode": "I0",
                 "iName": "输入0",
                 "iUnit": ""
             }, {
-                "iId": 1965,
+                "iId": 2004,
                 "iCode": "I1",
                 "iName": "输入1",
                 "iUnit": ""
             }, {
-                "iId": 1966,
+                "iId": 2003,
                 "iCode": "I2",
                 "iName": "输入2",
                 "iUnit": ""
             }, {
-                "iId": 1967,
+                "iId": 2002,
                 "iCode": "I3",
                 "iName": "输入3",
                 "iUnit": ""
             }, {
-                "iId": 1968,
+                "iId": 2001,
                 "iCode": "I4",
                 "iName": "输入4",
                 "iUnit": ""
             }, {
-                "iId": 1969,
+                "iId": 2000,
                 "iCode": "I5",
                 "iName": "输入5",
                 "iUnit": ""
             }, {
-                "iId": 1970,
+                "iId": 1999,
                 "iCode": "I6",
                 "iName": "输入6",
                 "iUnit": ""
             }, {
-                "iId": 1971,
+                "iId": 1998,
                 "iCode": "I7",
                 "iName": "输入7",
                 "iUnit": ""
             }, {
-                "iId": 1972,
+                "iId": 1997,
                 "iCode": "I8",
                 "iName": "输入8",
                 "iUnit": ""
             }, {
-                "iId": 1973,
+                "iId": 1996,
                 "iCode": "I9",
                 "iName": "输入9",
                 "iUnit": ""
@@ -85,10 +85,10 @@
             "protocol": "mqtt",
             "host": "899fb7d7a44544dc973794309837f6ab.mqtt.iot.gz.baidubce.com",
             "port": 1883,
-            "clientId": "schneiderplc1",
-            "username": "899fb7d7a44544dc973794309837f6ab/schneiderplc1",
-            "password": "oRNU6IbcDL7bv6PwBLPPt4T6AeV/vrzEHFawD5FxhJE=",
-            "topic": "$baidu/iot/data/SchneiderPLC1"
+            "clientId": "schneiderplc2",
+            "username": "899fb7d7a44544dc973794309837f6ab/schneiderplc2",
+            "password": "7QB9KNtp7yUmAZ9mpnEzuXLBTT59xwbixLqFbDzzgyM=",
+            "topic": "$baidu/iot/data/schneiderplc2"
         }
     }
 }

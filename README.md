@@ -1,6 +1,6 @@
 # Ruff Application
 
-### 部署并执行
+## 部署并执行
 
 ```shell
 > rap deploy --source --start <IP 地址>
@@ -15,9 +15,20 @@
 ```
 
 ### 停止应用
+
 ```shell
 > rap stop <IP 地址>
 ```
+
+## 关于 metadata 目录
+
+不同 PLC 要进行数据上报，上报的目的地址不同，该地址写入在配置文件中（即 metadata 目录的 `plc1.json` 和 `plc2.json`），不同的 PLC 运行相同的应用逻辑，但是要加载不同的配置文件，因此在部署 PLC2 的应用时，应该执行
+
+```shell
+> cp metadata/plc2.json src/metadata.json
+```
+
+默认项目中 src 目录下的 `metadata.json` 为 `plc1.json`
 
 ## 总结
 
@@ -88,7 +99,7 @@ If the external value becomes 0V from 24V, the event will be triggered.
 
 #### Example
 
-```js
+```json
 var PLC = require('schneider-ruff-plc');
 
 PLC.init(function () {
@@ -142,7 +153,7 @@ Upload values to Baidu IoT server right now.
 
 The parameter `values` is object type, in which keys can be `Ix` (x can be 0, 1, ... 9) and `Qx` (x can be 0, 1, 2, 3). Typically. when you call `PLC.readAllValues`, the return values is just like below, you can just pass it into this API.
 
-```js
+```json
 {
     "I0": true, // I0 - I9 (10 inputs)
     "I1": false,
@@ -156,7 +167,7 @@ The parameter `values` is object type, in which keys can be `Ix` (x can be 0, 1,
 
 #### Example
 
-```js
+```json
 var PLC = require('schneider-ruff-plc');
 
 var _DU = require('schneider-data-upload');

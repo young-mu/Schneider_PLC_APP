@@ -61,6 +61,12 @@ PLC.prototype.init = function (callback) {
         };
     }
 
+    // input value
+    var _preOutGpio= [
+        {channel: 55, 'type': 'gpio', direction: GPIO.DIR_HIGH, 'edge': GPIO.EDGE_NONE}, //24V enable
+        {channel: 56, 'type': 'gpio', direction: GPIO.DIR_HIGH, 'edge': GPIO.EDGE_NONE}, //5V enable
+    ];
+
     var _outGPIO = [];
     var _outLED = [];
     for (var i = 0; i < this.portTable.OUT.length; i++) {
@@ -79,7 +85,7 @@ PLC.prototype.init = function (callback) {
     }
 
     // build big array
-    this.portArray = _inGPIO.concat(_inLED).concat(_outGPIO).concat(_outLED);
+    this.portArray = _inGPIO.concat(_inLED).concat(_preOutGpio).concat(_outGPIO).concat(_outLED);
 
     for (var i = 0; i < this.portTable.IN.length; i++) {
         this.objIn[i] = new plcGPIO(this.portTable.IN[i]);
