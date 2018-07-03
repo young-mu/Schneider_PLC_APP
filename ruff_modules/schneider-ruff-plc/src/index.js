@@ -85,7 +85,7 @@ PLC.prototype.init = function (callback) {
     }
 
     // build big array
-    this.portArray = _inGPIO.concat(_inLED).concat(_preOutGpio).concat(_outGPIO).concat(_outLED);
+    this.portArray = _inGPIO.concat(_inLED).concat(_outGPIO).concat(_outLED).concat(_preOutGpio);
 
     for (var i = 0; i < this.portTable.IN.length; i++) {
         this.objIn[i] = new plcGPIO(this.portTable.IN[i]);
