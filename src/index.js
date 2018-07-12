@@ -6,12 +6,24 @@ $.ready(function (error) {
         return;
     }
 
+    // DEBUG 说明：
+    // 如果为真，整个 App 逻辑+ App 数据一起打包部署到 PLC 中
+    // 如果为假，只部署 App 逻辑，App 数据（要改名为 app-config.json）通过远程管理工具 OTA 到设备中
+    var DEBUG = false;
+    var appConfigPath;
+
+    if (DEBUG === true) {
+        appConfigPath = './metadata.json';
+    } else {
+        appConfigPath = '/ruff/app.data/app-config.json';
+    }
+
     console.log('Hello, Schneider PLC');
 
     var PLC = require('schneider-ruff-plc');
 
     var _DU = require('schneider-data-upload');
-    var duMetadata = require('./metadata.json');
+    var duMetadata = require(appConfigPath);
     var DU = new _DU(duMetadata, { debug: false });
 
     PLC.init(function (error) {
